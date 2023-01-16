@@ -165,57 +165,10 @@ public class IdentificationController {
 
 	}
 
-	/*
-	 * @FXML public void getLoginBtn(ActionEvent event) throws Exception {
-	 * 
-	 * ArrayList<String> usernameAndPsw = new ArrayList<>();
-	 * usernameAndPsw.add(txtUsername.getText());
-	 * usernameAndPsw.add(txtPswd.getText()); ClientUI.chat.accept(new
-	 * Message(Request.Login_Request, usernameAndPsw)); // if user is already
-	 * loggedin if (!ChatClient.userController.isUserExist()) { // In case the user
-	 * login input was invalid (username/password) - error label // will be shown
-	 * lblErrorOnDetails.setVisible(true);
-	 * lblErrorOnDetails.setText("Wrong username OR password! Try again!"); } else {
-	 * if (ChatClient.userController.getUser().isLoggedIn() == true) {
-	 * lblErrorOnDetails.setVisible(true);
-	 * lblErrorOnDetails.setText("User is already logged in!"); } else { // loading
-	 * next screen for specific user. if
-	 * (ChatClient.userController.getUser().getRole().toString().equals("Costumer"))
-	 * { ClientUI.chat .accept(new Message(Request.Get_Costumer,
-	 * ChatClient.userController.getUser().getId())); ((Node)
-	 * event.getSource()).getScene().getWindow().hide(); // hiding primary
-	 * 
-	 * //if
-	 * (ChatClient.userController.getUser().getConfiguration().toString().equals(
-	 * "OL") if (ChatClient.configuration.equals("OL") &&
-	 * !(ChatClient.costumerController.getCostumer().getStatus().toString()
-	 * .equals("NOTAPPROVED"))) { newScreen.setScreen(new Stage(),
-	 * "/clientGUI/Client_OL_MainView.fxml"); } //else if
-	 * (ChatClient.userController.getUser().getConfiguration().toString().equals(
-	 * "EK") else if (ChatClient.configuration.equals("EK") &&
-	 * !(ChatClient.costumerController.getCostumer().getStatus().toString()
-	 * .equals("NOTAPPROVED"))) { newScreen.setScreen(new Stage(),
-	 * "/clientGUI/Client_EK_MainView.fxml"); } if
-	 * (ChatClient.costumerController.getCostumer().getStatus().toString().equals(
-	 * "NOTAPPROVED")) { ((Node) event.getSource()).getScene().getWindow().hide();
-	 * // hiding primary newScreen.setScreen(new Stage(),
-	 * "/clientGUI/ScreenForNotApproveUserAfterLogin.fxml"); }
-	 * 
-	 * } else { ((Node) event.getSource()).getScene().getWindow().hide(); // hiding
-	 * primary newScreen.setScreen(new Stage(), "/clientGUI/" +
-	 * ChatClient.userController.getUser().getRole().toString());
-	 * 
-	 * } } }
-	 * 
-	 * }
-	 * 
-	 * 
-	 */
-
 	/**
-	 * @author clickOnQrImage-a method that gets an action:clicked on QR image to a
-	 *         subscriber,then client sends login request to server. usernameAndPsw
-	 *         - an ArrayList that keeps the user name and password and send it to
+	 * @author Ron clickOnQRImage-a method that gets an action:clicked on Login
+	 *         button,then client sends login request to server. usernameAndPsw - an
+	 *         ArrayList that keeps the user name and password and send it to
 	 *         server.
 	 * @param event
 	 * @throws Exception
